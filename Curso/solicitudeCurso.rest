@@ -1,0 +1,36 @@
+### Listar cursos
+GET http://localhost:6011/cursos
+
+###
+
+### Buscar curso por ID
+GET http://localhost:6011/cursos/1
+
+###
+
+### Crear curso
+POST http://localhost:6011/cursos
+Content-Type: application/json
+
+{
+  "nombreCurso": "Spring Boot Básico",
+  "descripcion": "Curso introductorio a Spring Boot",
+  "duracionHoras": 40
+}
+
+###
+
+### Actualizar curso
+PUT http://localhost:6011/cursos/1
+Content-Type: application/json
+
+{
+  "nombreCurso": "Spring Boot Intermedio",
+  "descripcion": "Curso intermedio",
+  "duracionHoras": 60
+}
+
+###
+
+### Eliminar curso
+DELETE http://localhost:6011/cursos/1

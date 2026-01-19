@@ -1,0 +1,30 @@
+### LISTAR
+GET http://localhost:6012/registro-rendimiento
+
+### GUARDAR
+POST http://localhost:6012/registro-rendimiento
+Content-Type: application/json
+
+{
+  "idEstudiante": 1,
+  "idCurso": 2,
+  "nota": 6.5,
+  "observacion": "Buen rendimiento"
+}
+
+### BUSCAR POR ID
+GET http://localhost:6012/registro-rendimiento/1
+
+### ACTUALIZAR
+PUT http://localhost:6012/registro-rendimiento/1
+Content-Type: application/json
+
+{
+  "idEstudiante": 1,
+  "idCurso": 2,
+  "nota": 6.8,
+  "observacion": "Excelente mejora"
+}
+
+### ELIMINAR
+DELETE http://localhost:6012/registro-rendimiento/1

@@ -1,0 +1,36 @@
+### Listar evaluaciones
+GET http://localhost:6013/evaluaciones
+
+###
+
+### Buscar evaluacion por ID
+GET http://localhost:6013/evaluaciones/1
+
+###
+
+### Crear evaluacion
+POST http://localhost:6013/evaluaciones
+Content-Type: application/json
+
+{
+  "nombreEvaluacion": "Prueba Final",
+  "descripcion": "Evaluacion final del curso",
+  "puntajeMaximo": 100
+}
+
+###
+
+### Actualizar evaluacion
+PUT http://localhost:6013/evaluaciones/1
+Content-Type: application/json
+
+{
+  "nombreEvaluacion": "Examen Final",
+  "descripcion": "Examen final actualizado",
+  "puntajeMaximo": 120
+}
+
+###
+
+### Eliminar evaluacion
+DELETE http://localhost:6013/evaluaciones/1

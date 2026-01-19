@@ -1,0 +1,38 @@
+### Listar contenidos educativos
+GET http://localhost:6010/contenidos-educativos
+
+###
+
+### Buscar por ID
+GET http://localhost:6010/contenidos-educativos/1
+
+###
+
+### Crear contenido educativo
+POST http://localhost:6010/contenidos-educativos
+Content-Type: application/json
+
+{
+  "titulo": "Introducción a Java",
+  "descripcion": "Curso básico de Java",
+  "tipoContenido": "VIDEO",
+  "urlContenido": "https://example.com/java"
+}
+
+###
+
+### Actualizar contenido educativo
+PUT http://localhost:6010/contenidos-educativos/1
+Content-Type: application/json
+
+{
+  "titulo": "Java Intermedio",
+  "descripcion": "Curso intermedio",
+  "tipoContenido": "PDF",
+  "urlContenido": "https://example.com/java-intermedio"
+}
+
+###
+
+### Eliminar contenido educativo
+DELETE http://localhost:6010/contenidos-educativos/1

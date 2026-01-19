@@ -1,0 +1,44 @@
+### ===============================
+### LISTAR EMPRESAS
+### ===============================
+GET http://localhost:6005/empresas
+Accept: application/json
+
+
+### ===============================
+### BUSCAR EMPRESA POR ID
+### ===============================
+GET http://localhost:6005/empresas/1
+Accept: application/json
+
+
+### ===============================
+### CREAR EMPRESA
+### ===============================
+POST http://localhost:6005/empresas
+Content-Type: application/json
+
+{
+  "nombreEmpresa": "EDUtech",
+  "rutEmpresa": "76.123.456-8",
+  "idDireccion": 2
+}
+
+
+### ===============================
+### ACTUALIZAR EMPRESA
+### ===============================
+PUT http://localhost:6005/empresas/1
+Content-Type: application/json
+
+{
+  "nombreEmpresa": "EDUTECH LIMITADA",
+  "rutEmpresa": "76.123.456-7",
+  "idDireccion": 1
+}
+
+
+### ===============================
+### ELIMINAR EMPRESA
+### ===============================
+DELETE http://localhost:6005/empresas/1

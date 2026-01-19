@@ -1,0 +1,26 @@
+### LISTAR COMUNAS
+GET http://localhost:6003/comunas
+
+### BUSCAR COMUNA POR ID
+GET http://localhost:6003/comunas/1
+
+### CREAR COMUNA
+POST http://localhost:6003/comunas
+Content-Type: application/json
+
+{
+  "nombreComuna": "Paine",
+  "idCiudad": 2
+}
+
+### ACTUALIZAR COMUNA
+PUT http://localhost:6003/comunas/1
+Content-Type: application/json
+
+{
+  "nombreComuna": "Ñuñoa",
+  "idCiudad": 1
+}
+
+### ELIMINAR COMUNA
+DELETE http://localhost:6003/comunas/1

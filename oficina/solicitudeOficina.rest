@@ -1,0 +1,44 @@
+### ===============================
+### LISTAR OFICINAS
+### ===============================
+GET http://localhost:6007/oficinas
+Accept: application/json
+
+
+### ===============================
+### BUSCAR OFICINA POR ID
+### ===============================
+GET http://localhost:6007/oficinas/1
+Accept: application/json
+
+
+### ===============================
+### CREAR OFICINA
+### ===============================
+POST http://localhost:6007/oficinas
+Content-Type: application/json
+
+{
+  "nombreOficina": "Oficina ",
+  "telefonoOficina": "+56 9 1234 5678",
+  "idEmpresa": 1
+}
+
+
+### ===============================
+### ACTUALIZAR OFICINA
+### ===============================
+PUT http://localhost:6007/oficinas/1
+Content-Type: application/json
+
+{
+  "nombreOficina": "Oficina Norte",
+  "telefonoOficina": "+56 9 9876 5432",
+  "idEmpresa": 1
+}
+
+
+### ===============================
+### ELIMINAR OFICINA
+### ===============================
+DELETE http://localhost:6007/oficinas/1

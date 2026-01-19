@@ -1,0 +1,36 @@
+### USUARIO - LISTAR
+GET http://localhost:6016/usuarios
+
+
+### USUARIO - CREAR
+POST http://localhost:6016/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan@correo.com",
+  "password": "123456",
+  "rol": "ESTUDIANTE",
+  "estado": "ACTIVO"
+}
+
+
+### USUARIO - BUSCAR POR ID
+GET http://localhost:6016/usuarios/1
+
+
+### USUARIO - ACTUALIZAR
+PUT http://localhost:6016/usuarios/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan@correo.com",
+  "password": "123456",
+  "rol": "ADMIN",
+  "estado": "ACTIVO"
+}
+
+
+### USUARIO - ELIMINAR
+DELETE http://localhost:6016/usuarios/1

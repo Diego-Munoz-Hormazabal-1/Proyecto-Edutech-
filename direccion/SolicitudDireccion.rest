@@ -1,0 +1,45 @@
+### ===============================
+### LISTAR DIRECCIONES
+### ===============================
+GET http://localhost:6004/direcciones
+Accept: application/json
+
+
+### ===============================
+### BUSCAR DIRECCION POR ID
+### ===============================
+GET http://localhost:6004/direcciones/1
+Accept: application/json
+
+
+### ===============================
+### CREAR DIRECCION
+### ===============================
+POST http://localhost:6004/direcciones
+Content-Type: application/json
+
+{
+  "calle": "Av. Siempre Veloz",
+  "numero": "742",
+  "idComuna": 1
+}
+
+
+### ===============================
+### ACTUALIZAR DIRECCION
+### ===============================
+PUT http://localhost:6004/direcciones/1
+Content-Type: application/json
+
+{
+  "calle": "Av. Siempre veloz",
+  "numero": "123",
+  "idComuna": 1
+}
+
+
+### ===============================
+### ELIMINAR DIRECCION
+### ===============================
+DELETE http://localhost:6004/direcciones/1
+
