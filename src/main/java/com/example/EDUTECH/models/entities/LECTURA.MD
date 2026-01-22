@@ -23,3 +23,4 @@ como se le da el largo a los atributos.
 cual es la dierencia entre manytoone  y manitoany 
 
  
+column nulllable es como decir que es caracter obligatorio?
